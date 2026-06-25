@@ -1,0 +1,8 @@
+"""
+
+
+"""
+
+
+class ChessApplication:
+    pass
