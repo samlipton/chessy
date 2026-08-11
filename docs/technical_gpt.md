@@ -2,12 +2,14 @@
 
 Here is an outlook into some technical elements of the chess analysis application
 
+--------
 ## High-Level Architecture
 
 - Frontend : [ReactJS](https://react.dev/learn)
 - Backend  : [FastAPI](https://fastapi.tiangolo.com/)
 - Engine   : [Stockfish](https://stockfishchess.org/download/)
 
+```
 +------------------------------------------------+
 |                  Frontend                      |
 |  React + TypeScript + Chessboard UI            |
@@ -36,9 +38,12 @@ Here is an outlook into some technical elements of the chess analysis applicatio
 |                  Persistence                   |
 | SQLite (Phase 1)                               |
 +------------------------------------------------+
+```
 
+--------
 ## Frontend
 
+```
 frontend/
 │
 ├── src/
@@ -61,11 +66,14 @@ frontend/
 │   └── useGame.ts
 │
 └── types/
+```
 
+--------
 ## Backend 
 
 Python offers the fastest MVP (FastAPI), huge chess ecosystem (python-chess, stockfish), and easy integration with ML.
 
+```
 backend/
 │
 ├── main.py
@@ -99,9 +107,11 @@ backend/
 │   └── settings.py
 │
 └── tests/
+```
 
 ### Core Domain Objects
 
+```
 Game
  ├─ id
  ├─ board_state(FEN)
@@ -118,3 +128,4 @@ Move
  ├─ uci
  ├─ timestamp
  └─ player
+```
