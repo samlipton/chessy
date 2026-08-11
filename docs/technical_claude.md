@@ -1,11 +1,13 @@
 # Technical Notes
 
+--------
 ## High-Level Architecture 
 
 - Frontend : [ReactJS](https://react.dev/learn)
 - Backend  : [FastAPI](https://fastapi.tiangolo.com/)
 - Engine   : [Stockfish](https://stockfishchess.org/download/)
 
+--------
 ## Frontend
 
 ### [Building a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch)
@@ -20,3 +22,6 @@ The build tools listed above start off with a client-only, single-page app (SPA)
 - Data fetching
 - Code splitting
 - Improving application performance  
+
+--------
+## Backend
