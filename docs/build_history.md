@@ -1,14 +1,11 @@
-# Technical Notes
-
---------
-## High-Level Architecture 
-
-- Frontend : [ReactJS](https://react.dev/learn)
-- Backend  : [FastAPI](https://fastapi.tiangolo.com/)
-- Engine   : [Stockfish](https://stockfishchess.org/download/)
+# Legacy Notes
 
 --------
 ## Frontend
+
+The chessboard UI is implemented using `react-chessboard` 
+- components: main board, ELO slider, move history panel, status panel
+- hooks: game management 
 
 ### [Building a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch)
 
@@ -25,3 +22,7 @@ The build tools listed above start off with a client-only, single-page app (SPA)
 
 --------
 ## Backend
+
+- `FastAPI`: server with WebSocket support for real-time game state
+- `python-chess`: library for move validation, game logic, and FEN/PGN handling
+- `Stockfish`: engine integration with configurable skill level (ELO mapping)
